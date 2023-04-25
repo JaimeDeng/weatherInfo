@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #DDEEEC;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    main{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .taiwan{
+            position: relative;
+            height: 60%;
+            width: 60%;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        
+        .card{
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            height: 15vh;
+            width: max-content;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0px 10px 20px rgb(77, 77, 77);
+
+            .left{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1vh;
+                h2{
+                    display: inline-block;
+                    margin-right: 1vw;
+                }
+                h5{
+                    display: inline-block;
+                }
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                margin-left: 2vw;
+                overflow: hidden;
+                i{
+                    color: #485c7f;
+                    font-size: 80px;
+                }
+            }
+        }
+        .taipei{
+            top: 1%;
+            left: 45%;
+        }
+        .newTaipei{
+            top: 4%;
+            left: 22%;
+        }
+        .taichung{
+            top: 30%;
+            left: 23%;
+        }
+        .tainan{
+            top: 50%;
+            left: 20%;
+        }
+        .kaohsiung{
+            bottom: 18%;
+            left: 23%;
+        }
+        .pingtung{
+            bottom: 2%;
+            left: 35%;
+        }
+        .hualien{
+            top: 40%;
+            right: 15%;
+        }
+        .taitung{
+            top: 60%;
+            right: 17%;
+        }
+    }
+
+}
+
+@media (max-width:600px){
+    .taiwan{
+        height: 80% !important;
+        width: 80% !important;
+    }
+    .card{
+        height: 9vh !important;
+        padding: 14px !important;
+        box-shadow: 0px 4px 10px rgb(77, 77, 77) !important;
+        .left{
+            h2{
+                font-size: 18px;
+                font-weight: 700;
+            }
+            h5{
+                font-size: 10px;
+                font-weight: 600;
+            }
+        }
+        .right{
+            i{
+                font-size: 30px !important;
+            }
+        }
+    }
+    .taipei{
+        top: 9% !important;
+        left: 40% !important;
+    }
+    .newTaipei{
+        top: 20% !important;
+        left: 37% !important;
+    }
+    .taichung{
+        top: 34% !important;
+        left: 5% !important;
+    }
+    .tainan{
+        top: 50% !important;
+        left: 1% !important;
+    }
+    .kaohsiung{
+        bottom: 30% !important;
+        left: 2% !important;
+    }
+    .pingtung{
+        bottom: 16% !important;
+        left: 28% !important;
+    }
+    .hualien{
+        top: 40% !important;
+        right: 0% !important;
+    }
+    .taitung{
+        top: 55% !important;
+        right: 2% !important;
+    }
+} 
